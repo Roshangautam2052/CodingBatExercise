@@ -8,6 +8,7 @@ evenlySpaced(4, 6, 3) → false
  */
 
 package Logic2;
+import java.util.*;
 
 public class evenlySpaced {
     public static boolean evenlySpaced(int a, int b, int c) {
