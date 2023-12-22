@@ -11,7 +11,15 @@ makeChocolate(4, 1, 7) → 2
 package Logic2;
 
 public class makeChocolate {
+    public static int  makeChocolateFunction(int small, int big, int goal){
+        int remainder = goal/5;
+        if(remainder>=big) remainder = big;
+        if(small>= goal - remainder*5) return goal-remainder*5;
+        return -1;
+    }
     public static void main(String[]args){
+        //Testing for the values of small, big and goal
+        System.out.println(makeChocolateFunction(4,1,9));
 
     }
 }
